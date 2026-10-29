@@ -1,0 +1,419 @@
+:root {
+  --temple-red: #780c12;
+  --temple-red-dark: #4b080c;
+  --temple-gold: #e7bd72;
+  --temple-cream: #fffaf1;
+  --temple-ink: #302524;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--temple-ink);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.site-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  background: linear-gradient(180deg, rgb(55 5 7 / 78%), rgb(55 5 7 / 0%));
+}
+
+.navbar {
+  min-height: 82px;
+}
+
+.brand-logo {
+  width: 58px;
+  height: 58px;
+  border: 2px solid rgb(255 255 255 / 55%);
+  border-radius: 50%;
+  background: white;
+  object-fit: cover;
+}
+
+.brand-name {
+  color: #fff;
+  font-size: 0.94rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.brand-name [lang="en"] {
+  display: block;
+}
+
+.brand-name [lang="gu"] {
+  display: block;
+  color: var(--temple-gold);
+  font-size: 0.75rem;
+}
+
+.navbar .nav-link {
+  margin: 0 0.2rem;
+  color: rgb(255 255 255 / 90%);
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+  color: var(--temple-gold);
+}
+
+.language-link {
+  border-left: 1px solid rgb(255 255 255 / 35%);
+  padding-left: 1rem !important;
+}
+
+.bilingual {
+  display: grid;
+  gap: 0.18em;
+}
+
+.bilingual [lang="gu"] {
+  font-family: "Noto Sans Gujarati", "Nirmala UI", "Shruti", sans-serif;
+}
+
+.bilingual-nav {
+  gap: 0.08em;
+  line-height: 1.15;
+}
+
+.bilingual-nav [lang="gu"] {
+  color: var(--temple-gold);
+  font-size: 0.8em;
+}
+
+.btn-donation {
+  border: 0;
+  border-radius: 50rem;
+  background: #fff;
+  color: var(--temple-red);
+  font-weight: 700;
+  padding: 0.65rem 1.35rem;
+}
+
+.btn-donation:hover,
+.btn-donation:focus-visible {
+  background: var(--temple-gold);
+  color: var(--temple-red-dark);
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  height: 100svh;
+}
+
+.hero-section > .carousel,
+.hero-section .carousel-inner,
+.hero-section .carousel-item {
+  height: 100%;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+}
+
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(36 4 5 / 75%), rgb(55 5 7 / 42%) 54%, rgb(36 4 5 / 15%));
+}
+
+.hero-caption {
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: max(10%, calc((100% - 1140px) / 2));
+  width: min(680px, 74%);
+  padding: 0;
+  text-align: left;
+  transform: translateY(-45%);
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 0.7rem;
+  color: #9c3d25;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.hero-caption .eyebrow {
+  color: var(--temple-gold);
+}
+
+.hero-caption h1,
+.hero-caption h2 {
+  max-width: 700px;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: clamp(2.5rem, 5vw, 4.7rem);
+  font-weight: 750;
+  line-height: 1.05;
+  text-shadow: 0 2px 18px rgb(0 0 0 / 30%);
+}
+
+.hero-caption p {
+  margin-bottom: 1.6rem;
+  color: rgb(255 255 255 / 92%);
+  font-size: clamp(1.05rem, 2vw, 1.4rem);
+}
+
+.hero-caption .bilingual {
+  gap: 0.28em;
+}
+
+.hero-caption .bilingual [lang="gu"] {
+  font-size: 0.82em;
+  line-height: 1.45;
+}
+
+.hero-caption .eyebrow [lang="gu"] {
+  font-size: 0.95em;
+}
+
+.btn-gold {
+  border: 1px solid var(--temple-gold);
+  border-radius: 50rem;
+  background: var(--temple-gold);
+  color: var(--temple-red-dark);
+  font-weight: 750;
+  padding: 0.8rem 1.5rem;
+}
+
+.btn-gold:hover,
+.btn-gold:focus-visible {
+  border-color: #fff;
+  background: #fff;
+  color: var(--temple-red);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 50%;
+}
+
+.section-space {
+  padding: 5.5rem 0;
+}
+
+.darshan-section {
+  background: var(--temple-cream);
+}
+
+.section-heading {
+  max-width: 680px;
+  margin: 0 auto 2.7rem;
+}
+
+.section-heading h2,
+.about-section h2,
+.events-strip h2,
+.prasad-section h2 {
+  margin-bottom: 0.9rem;
+  color: var(--temple-red-dark);
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 750;
+}
+
+.section-heading p,
+.about-section p,
+.events-strip p,
+.prasad-section p {
+  color: #6f6060;
+  font-size: 1.05rem;
+}
+
+.photo-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 390px;
+  border-radius: 1rem;
+  background: var(--temple-red-dark);
+  box-shadow: 0 12px 30px rgb(74 25 15 / 12%);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  transition: transform 350ms ease;
+}
+
+.photo-card:hover img {
+  transform: scale(1.035);
+}
+
+.photo-card-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 3.5rem 1.4rem 1.35rem;
+  background: linear-gradient(transparent, rgb(28 6 6 / 88%));
+  color: #fff;
+}
+
+.photo-card-caption h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.photo-card-caption p {
+  margin: 0;
+  color: rgb(255 255 255 / 84%);
+}
+
+.about-image {
+  width: 100%;
+  max-height: 590px;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 16px 16px 0 var(--temple-gold);
+}
+
+.about-section p {
+  max-width: 540px;
+  line-height: 1.85;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: var(--temple-red);
+  font-weight: 700;
+  text-decoration-color: var(--temple-gold);
+  text-underline-offset: 0.3rem;
+}
+
+.events-strip {
+  background: linear-gradient(120deg, var(--temple-red-dark), var(--temple-red));
+  color: #fff;
+}
+
+.events-strip h2 {
+  color: #fff;
+}
+
+.events-strip p {
+  color: rgb(255 255 255 / 82%);
+}
+
+.events-strip .eyebrow {
+  color: var(--temple-gold);
+}
+
+.prasad-section {
+  background: var(--temple-cream);
+}
+
+.site-footer {
+  padding: 1.5rem 0;
+  background: #2e090a;
+  color: rgb(255 255 255 / 75%);
+  font-size: 0.9rem;
+}
+
+.footer-brand {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 1199.98px) {
+  .site-header {
+    background: rgb(92 8 13 / 96%);
+  }
+
+  .navbar-nav {
+    align-items: flex-start !important;
+    padding: 0.7rem 0 1rem;
+  }
+
+  .language-link {
+    border-left: 0;
+    padding-left: 0.5rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar {
+    min-height: 72px;
+  }
+
+  .about-section .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .brand-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero-image {
+    object-position: 55% center;
+  }
+
+  .hero-caption {
+    left: 11%;
+    width: 78%;
+  }
+
+  .hero-caption h1,
+  .hero-caption h2 {
+    font-size: clamp(2.2rem, 10vw, 3.3rem);
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+
+  .section-space {
+    padding: 4rem 0;
+  }
+
+  .photo-card,
+  .photo-card img {
+    min-height: 0;
+    height: 390px;
+  }
+
+  .about-image {
+    max-height: 430px;
+  }
+
+  .site-footer .container {
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}

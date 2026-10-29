@@ -1,0 +1,21 @@
+{
+  "name": "Shree Ugratayi Meldi Mataji Mandir",
+  "short_name": "Meldi Mataji",
+  "icons": [
+    {
+      "src": "./web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#780c12",
+  "background_color": "#fffaf1",
+  "display": "standalone"
+}
